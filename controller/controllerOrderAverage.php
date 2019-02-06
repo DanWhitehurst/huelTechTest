@@ -18,7 +18,7 @@ class ControllerOrderAverage {
     {
 //        $aData = $this->connectToShopifyAPI();
         
-        $aData = $this->buildData(); //using th is for dummy data as can't connect to shopifyApi
+        $aData = $this->buildData(); //using this for dummy data as can't connect to shopifyApi
         
         $numberOfOrders = count($aData['orders']);
         $totalOfOrders = 0;
