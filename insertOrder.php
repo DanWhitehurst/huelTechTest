@@ -7,5 +7,6 @@ require_once('model/modelOrders.php');
 $oOrderInsert = new ControllerOrderInsert();
 $aOrder = $oOrderInsert->insertNewOrder();
 
-print_r($aOrder);
-
+foreach ($aOrder as $key=>$value) {
+    echo $key . ': ' . $value . ' </br>';
+}

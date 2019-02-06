@@ -53,7 +53,8 @@ class ControllerOrderAverage {
         return $aData;
     }
     
-    public function getApiData() {
+    public function getApiData()
+    {
         $ch = curl_init();
     
         curl_setopt($ch, CURLOPT_URL, $this->apiUrl);
