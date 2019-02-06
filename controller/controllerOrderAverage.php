@@ -60,11 +60,11 @@ class ControllerOrderAverage {
         curl_setopt($ch, CURLOPT_URL, $this->apiUrl);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     
-        $results = curl_exec($ch);
+        $apiData = curl_exec($ch);
     
         curl_close($ch);
         
-        return $results;
+        return $apiData;
     }
     
     public function setCustomerId($customerId)
